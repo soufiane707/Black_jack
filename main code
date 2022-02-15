@@ -8,7 +8,7 @@ def should_hit(dealer_total, player_total, player_low_aces, player_high_aces):
     l = player_low_aces
     h = player_high_aces
     a = d/p
-    
+    #well idk how am supposed to deal with l and h
     
     
     if   0.047619048 <= a < 0.69:
