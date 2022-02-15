@@ -1,0 +1,28 @@
+def should_hit(dealer_total, player_total, player_low_aces, player_high_aces):
+    """Return True if the player should hit (request another card) given the current game
+    state, or False if the player should stay.
+    """
+    
+    d = dealer_total
+    p = player_total
+    l = player_low_aces
+    h = player_high_aces
+    a = d/p
+    
+    
+    
+    if   0.047619048 <= a < 0.69:
+         return False
+    elif   0.69<=a<=2.2:
+         return True
+    elif   2.2<a<=3.89:
+         return False
+    elif   3.89<a<=8.64345:
+         return True
+    elif   8.64345<a<=11.1242:
+         return False
+    elif   11.1242<a<=17.8906:
+         return True
+    elif   17.8906<a<=21:
+         return False
+       
